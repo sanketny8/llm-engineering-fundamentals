@@ -6,6 +6,7 @@ Author: sanketny8
 License: MIT
 Requires-Python: >=3.11
 Description-Content-Type: text/markdown
+License-File: LICENSE
 Requires-Dist: numpy>=1.26
 Requires-Dist: pydantic>=2.5
 Requires-Dist: rich>=13.7
@@ -16,6 +17,7 @@ Requires-Dist: ruff>=0.1.14; extra == "dev"
 Requires-Dist: mypy>=1.8; extra == "dev"
 Requires-Dist: matplotlib>=3.8; extra == "dev"
 Requires-Dist: streamlit>=1.29; extra == "dev"
+Dynamic: license-file
 
 # llm-engineering-fundamentals
 
