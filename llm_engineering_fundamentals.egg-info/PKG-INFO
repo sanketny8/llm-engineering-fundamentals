@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: llm-engineering-fundamentals
+Version: 0.1.0
+Summary: Production-grade LLM engineering fundamentals: tokenization to inference optimization.
+Author: sanketny8
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26
+Requires-Dist: pydantic>=2.5
+Requires-Dist: rich>=13.7
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.1; extra == "dev"
+Requires-Dist: ruff>=0.1.14; extra == "dev"
+Requires-Dist: mypy>=1.8; extra == "dev"
+Requires-Dist: matplotlib>=3.8; extra == "dev"
+Requires-Dist: streamlit>=1.29; extra == "dev"
+
+# llm-engineering-fundamentals
+
+Production-grade implementations of core LLM building blocks — from **tokenization** to **inference optimization** — with tests, benchmarks, and visualizations.
+
+## Repo layout
+
+- `01-tokenization/`: BPE tokenizer + token visualizer + embedding distance demos
+- `02-positional-embeddings/` … `16-synthetic-data/`: planned modules (implemented step-by-step)
+- `shared/`: shared utilities (plotting/benchmarks/datasets)
+
+## Quick start (Project 01)
+
+```bash
+cd /Users/sanketny8/Desktop/MyGithub/llm-engineering-fundamentals
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -U pip
+pip install -e ".[dev]"
+
+# run tests
+make test
+
+# run token visualizer (local)
+make token-viz
+```
+
+## Quality bar
+
+- **Reproducible**: deterministic seeds where applicable
+- **Tested**: `pytest`
+- **Linted**: `ruff`
+- **CI**: GitHub Actions runs lint + tests on push/PR
+
+

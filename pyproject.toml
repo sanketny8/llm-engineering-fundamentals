@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-engineering-fundamentals"
+version = "0.1.0"
+description = "Production-grade LLM engineering fundamentals: tokenization to inference optimization."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "sanketny8" }]
+dependencies = [
+  "numpy>=1.26",
+  "pydantic>=2.5",
+  "rich>=13.7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=4.1",
+  "ruff>=0.1.14",
+  "mypy>=1.8",
+  "matplotlib>=3.8",
+  "streamlit>=1.29",
+]
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["llm_engineering_fundamentals*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["01-tokenization/tests", "tests"]
+
+
