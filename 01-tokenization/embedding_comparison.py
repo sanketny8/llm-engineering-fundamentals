@@ -169,3 +169,5 @@ if __name__ == "__main__":
     print("4. Cosine similarity is the standard metric for embedding comparison")
     print("=" * 70)
 
+
+

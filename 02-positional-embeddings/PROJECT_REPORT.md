@@ -385,3 +385,5 @@ Project 02 is **complete** and demonstrates deep understanding of positional enc
 
 **Progress**: 2/16 projects complete (12.5%)
 
+
+
