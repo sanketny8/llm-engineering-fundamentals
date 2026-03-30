@@ -42,6 +42,17 @@ select = ["E", "F", "I", "B", "UP"]
 
 [tool.pytest.ini_options]
 addopts = "-q"
-testpaths = ["01-tokenization/tests", "tests"]
+testpaths = [
+    "01-tokenization/tests",
+    "02-positional-embeddings/tests",
+    "03-attention/tests",
+    "04-transformers/tests",
+    "05-feedforward-activations/tests",
+    "06-dropout-regularization/tests",
+    "07-embeddings/tests",
+    "08-decoding-strategies/tests",
+    "09-sampling/tests",
+    "10-mini-transformer/tests",
+]
 
 
